@@ -1,0 +1,308 @@
+[
+  {
+    "uri": "examples.feature",
+    "id": "examples",
+    "keyword": "Feature",
+    "name": "Examples",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "examples;looking-at-the-build-analytics-data-layer",
+        "keyword": "Scenario",
+        "name": "Looking at the Build analytics data layer",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I visit \"https://www.build.com/\"",
+            "line": 4,
+            "match": {
+              "location": "examples.feature:4"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I reload the page a couple times to close the pop-ups",
+            "line": 5,
+            "match": {
+              "location": "examples.feature:5"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see the following page elements in the data layer",
+            "line": 6,
+            "rows": [
+              {
+                "cells": [
+                  "data_element",
+                  "data_type"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar13",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar60",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar74",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar74",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "channel",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "emailSignup",
+                  "FalseClass"
+                ]
+              },
+              {
+                "cells": [
+                  "pageName",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "sProp.prop11",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "sProp.prop19",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "serverName",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "siteName",
+                  "String"
+                ]
+              }
+            ],
+            "match": {
+              "location": "examples.feature:6"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "But ",
+            "name": "more importantly these elements should return expected values",
+            "line": 19,
+            "rows": [
+              {
+                "cells": [
+                  "data_element",
+                  "data_value"
+                ]
+              },
+              {
+                "cells": [
+                  "page",
+                  "main:home"
+                ]
+              },
+              {
+                "cells": [
+                  "omniture.reportSuiteId",
+                  "buildcom"
+                ]
+              }
+            ],
+            "match": {
+              "location": "examples.feature:19"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "examples;looking-at-the-build-analytics-data-layer-on-next-page",
+        "keyword": "Scenario",
+        "name": "Looking at the Build analytics data layer on next page",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I then visit \"https://www.build.com/bathroom\"",
+            "line": 27,
+            "match": {
+              "location": "examples.feature:27"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I reload the next page a couple times to close the pop-ups",
+            "line": 28,
+            "match": {
+              "location": "examples.feature:28"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see the new following page elements in the data layer",
+            "line": 29,
+            "rows": [
+              {
+                "cells": [
+                  "data_element",
+                  "data_type"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar13",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar60",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar74",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "eVar.eVar74",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "channel",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "emailSignup",
+                  "FalseClass"
+                ]
+              },
+              {
+                "cells": [
+                  "pageName",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "sProp.prop11",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "sProp.prop19",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "serverName",
+                  "String"
+                ]
+              },
+              {
+                "cells": [
+                  "siteName",
+                  "String"
+                ]
+              }
+            ],
+            "match": {
+              "location": "examples.feature:29"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "But ",
+            "name": "more importantly these new page elements should return expected values",
+            "line": 42,
+            "rows": [
+              {
+                "cells": [
+                  "data_element",
+                  "data_value"
+                ]
+              },
+              {
+                "cells": [
+                  "pageName",
+                  "www.build.com:category:108412:Bathroom"
+                ]
+              },
+              {
+                "cells": [
+                  "omniture.reportSuiteId",
+                  "buildcom"
+                ]
+              }
+            ],
+            "match": {
+              "location": "examples.feature:42"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
